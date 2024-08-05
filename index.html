@@ -3,54 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MetaBolix institute</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Male Excel Header</title>
+    <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    <header>
+<body >
+  <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-md bg-gray-800 ">
+    <div class="flex-1 flex justify-between items-center">
+        <a href="#" class="text-xl text-white">LOGO</a>
+    </div>
+
+    <label for="menu-toggle" class="pointer-cursor md:hidden block">
+      <svg class="fill-current text-gray-900"
+        xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <title>menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+      </svg>
+    </label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+    <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
         <nav>
-            <div class="logo">
-                <h1>MetaBolix</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Shop</a></li>
+            <ul class="md:flex items-center justify-between text-base pt-4 md:pt-0 text-white">
+                <li><a class="md:p-4 py-3 px-0 block" href="#">AboutUs</a></li>
+                <li><a class="md:p-4 py-3 px-0 block" href="#">Treatments</a></li>
+                <li><a class="md:p-4 py-3 px-0 block" href="#">Blog</a></li>
+                <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">Contact Us</a></li>
             </ul>
-            <div class="appointment-button">
-                <a href="#">Appointment</a>
-            </div>
         </nav>
-    </header>
-    <main>
-        <section class="services">
-            <h2>Services</h2>
-            <div class="services-grid">
-                <div class="service-item">Weight management</div>
-                <div class="service-item">Hormone optimisation therapy
+    </div>
+
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('hidden');
+      });
+    </script>
+</header>
+  <section class="py-10 bg-gray-200 sm:py-16 lg:py-24 ">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="grid items-center grid-cols-1 lg:grid-cols-2 gap-x-12 xl:gap-x-24 gap-y-12">
+            <div class="relative lg:mb-12">
+                <div class="pl-12 pr-6">
+                    <img class="relative" src="images/elder-man-doing-exercises-outdoors.png" alt="" />
                 </div>
-                <div class="service-item">Peptide longevity therapeutics</div>
-             
+                
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-item">
-                <h3>Hours</h3>
-                <p>MONDAY-FRIDAY 9am–5pm, SATURDAY 9am – 2pm SUNDAY Closed</p>
-                <p>(BY APPOINTMENT)</p>
-            </div>
-            <div class="footer-item">
-                <h3>Phone</h3>
-                <p>(xxx) xxx-xxxx</p>
-            </div>
-            <div class="footer-item">
-                <h3>Location</h3>
-                <p>23735, Gold Nugget Ave, Diamond Bar, CA-91765</p>
+
+            <div class="2xl:pl-16">
+                <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">Healthy life long life</h2>
+                <p class="text-xl leading-relaxed text-gray-900 mt-9">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia conse duis enim velit mollit. Exercitation veniam.</p>
+                <p class="mt-6 text-xl leading-relaxed text-gray-900">Velit officia conse duis enim velit mollit. Exercit ation veniam consequat sunt nostrud amet.</p>
             </div>
         </div>
-    </footer>
+    </div>
+  </section>
+
+
+
+
+  <section class="py-12 bg-gray-900 text-gray-100 sm:py-12 lg:py-16">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-xl mx-auto text-center xl:max-w-2xl">
+            <h2 class="text-3xl font-bold leading-tight text-gray-50 sm:text-4xl xl:text-5xl mb-6">We are just getting started!</h2>
+            <p class="mb-4">Managed by World renowned GI Doctor</p>
+        </div>
+        <div class="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
+            
+            <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Testosterone Replacement Therapy</h3>
+                    <p class="mt-6 text-base text-gray-600">Boost your energy and vitality with our customized TRT plans tailored to your needs.</p>
+                </div>
+            </div>
+  
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Erectile Dysfunction Treatment</h3>
+                    <p class="mt-6 text-base text-gray-600">Effective ED treatments to improve your performance and confidence.</p>
+                </div>
+            </div>
+  
+            <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Weight Loss Programs</h3>
+                    <p class="mt-6 text-base text-gray-600">Achieve your weight loss goals with our guided programs and expert support.</p>
+                </div>
+            </div>
+  
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Testosterone Molecule Turned Sideways</h3>
+                    <p class="mt-6 text-base text-gray-600">Innovative testosterone therapy for enhanced wellness and health.</p>
+                </div>
+            </div>
+  
+            <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Integrated Medicine</h3>
+                    <p class="mt-6 text-base text-gray-600">Comprehensive care combining traditional and modern medical practices.</p>
+                </div>
+            </div>
+  
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Regenerative Medicine</h3>
+                    <p class="mt-6 text-base text-gray-600">Advanced treatments to restore and rejuvenate your body.</p>
+                </div>
+            </div>
+  
+            <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Peptide Therapy for Brain Health</h3>
+                    <p class="mt-6 text-base text-gray-600">Enhance cognitive function with targeted peptide treatments.</p>
+                </div>
+            </div>
+  
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Gut and Liver Health</h3>
+                    <p class="mt-6 text-base text-gray-600">Improve digestion and detoxification for optimal health.</p>
+                </div>
+            </div>
+  
+            <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Supplement Maximization</h3>
+                    <p class="mt-6 text-base text-gray-600">Maximize the benefits of supplements with personalized plans.</p>
+                </div>
+            </div>
+  
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Muscle Growth</h3>
+                    <p class="mt-6 text-base text-gray-600">Effective strategies and therapies for muscle building.</p>
+                </div>
+            </div>
+  
+            <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Skin Health</h3>
+                    <p class="mt-6 text-base text-gray-600">Maintain healthy and youthful skin with our treatments.</p>
+                </div>
+            </div>
+  
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Weight Management</h3>
+                    <p class="mt-6 text-base text-gray-600">Comprehensive programs for effective weight management.</p>
+                </div>
+            </div>
+  
+            <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Hormone Optimization Therapy</h3>
+                    <p class="mt-6 text-base text-gray-600">Balance your hormones for better health and well-being.</p>
+                </div>
+            </div>
+  
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9">
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Peptide Longevity Therapeutics</h3>
+                    <p class="mt-6 text-base text-gray-600">Advanced peptide therapies to promote longevity and healthy aging.</p>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white p-8 my-10">
+  <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+          <div>
+              <h5 class="text-lg font-bold mb-4">Phone</h5>
+              <p>+1 (555) 123-4567</p>
+          </div>
+          <div>
+              <h5 class="text-lg font-bold mb-4">Email</h5>
+              <p>info@menshealthclinic.com</p>
+          </div>
+          <div>
+              <h5 class="text-lg font-bold mb-4">Address</h5>
+              <p>123 Health St.<br>Wellness City, XY 12345</p>
+          </div>
+      </div>
+      <div class="text-center mt-8">
+          <p>&copy; 2024 MetaboliX institue. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
